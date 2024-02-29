@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Teste Panda 2024</title>
+</head>
+<body>
+    <header>
+        <p class="breadcrumb">
+            Inicio > Feminino > Vestidos > <a href="/" class="breadcrumb-link">Ver detalhes</a>
+        </p>
+    </header>
+    <main id="product-main">
+        <section class="product-main__images">
+            <div class="imgs">
+                <i class="fa-solid fa-angle-up" onclick="scrollUp()"></i>
+                <img src="./imgs/carrossel-img-prod-03.jpg" alt="Vestido Intense Manga Longa"  class="img selected" onclick="selectImage('carrossel-img-prod-03.jpg')">
+                <img src="./imgs/carrossel-img-prod-02.jpg" alt="Vestido Intense Manga Longa" class="img" onclick="selectImage('carrossel-img-prod-02.jpg')">
+                <img src="./imgs/carrossel-img-prod-01.jpg" alt="Vestido Intense Manga Longa" class="img" onclick="selectImage('carrossel-img-prod-01.jpg')">
+                <i class="fa-solid fa-angle-down" onclick="scrollDown()"></i>
+            </div>
+            <div class="container__img-main">
+                <input type="checkbox" name="like-main-product" id="main-product">
+                <label for="main-product">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </label>
+                <img src="./imgs/carrossel-img-prod-03.jpg" alt="Vestido Intense Manga Longa" class="img-main">
+            </div>
+        </section>
+        <section class="product-main__info">
+            <h1>Vestido Intense Manga Longa</h1>
+            <span class="ref">Ref: 00000000</span>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star disabled"></i>
+                <a href="javascript:void(0);" onclick="showModalRating()">Ver avaliações</a>
+            </div>
+            <p class="title-select">Selecione a cor</p>
+            <div class="select-color">
+                <input type="radio" name="color" id="blue" checked>
+                <label for="blue" class="label-color blue"></label>
+                <input type="radio" name="color" id="orange">
+                <label for="orange" class="label-color orange"></label>
+                <input type="radio" name="color" id="purple">
+                <label for="purple" class="label-color purple"></label>
+            </div>
+            <p class="title-select">Selecione a tamanho</p>
+            <div class="select-size">
+                <input type="radio" name="size" id="pp" checked>
+                <label for="pp" class="label-size pp">PP</label>
+                <input type="radio" name="size" id="p">
+                <label for="p" class="label-size p">P</label>
+                <input type="radio" name="size" id="m">
+                <label for="m" class="label-size m">M</label>
+                <input type="radio" name="size" id="g">
+                <label for="g" class="label-size g">G</label>
+                <input type="radio" name="size" id="gg">
+                <label for="gg" class="label-size gg">GG</label>
+            </div>
+            <a href="javascript:void(0);" class="link__table-size" onclick="showModalTableSize()">Ver tabela de tamanhos</a>
+            <span class="alert-estoque">Últimos 2 produtos em estoque. Não perca esta chance!</span>
+            <div class="price">
+                <span class="price-discount">10% off</span>
+                <div class="price-value">
+                    <p class="old-price">R$ 97,20</p>
+                    <h2 class="new-price">R$ 87,48</h2>
+                </div>
+                <p class="price-payment">Parcelados em até 4x sem juros no cartão</p>
+            </div>
+            <button class="add-cart" onclick="showModalAddCart()">
+                <img src="./imgs/Ícone Cart.svg" alt="Icone de carrinho de compras"/>
+                Adicionar ao carrinho
+            </button>
+            <div class="calculate-shipping">
+                <p class="title-shipping">Calcule o prazo e o valor da entrega</p>
+                <div class="input-shipping">
+                    <input type="text" placeholder="00000-000" class="inputShipping">
+                    <button onclick="showShippingValue()">Calcular</button>
+                </div>
+            </div>
+            <div class="extra-info">
+                <details class="product-details">
+                    <summary>Detalhes do produto <i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up"></i></summary>
+                    <p>
+                        O nosso modelo de vestido Intense com certeza é a tendência do momento! Com um corte justo no corpo, ele realça suas curvas de forma leve e sensual. Feito com uma combinação de tecidos de alta qualidade, incluindo lycra, poliéster e algodão, o vestido Intense proporciona um conforto excepcional. O design sem estampa adiciona um toque minimalista e versátil ao seu look, perfeito para ocasiões casuais. Seja para um encontro descontraído ou uma tarde entre amigos, este vestido é a escolha certa para um estilo sensual e sofisticado ao mesmo tempo.
+                    </p>
+                </details>
+                <hr class="responsive-hr">
+                <details class="product-characteristics">
+                    <summary>Caracteristicas do Produto <i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up"></i></summary>
+                    <p>
+                        Composição Tecido: 94% Poliester, 06% Elastano
+                    </p>
+                </details>
+                <hr class="responsive-hr">
+                <details class="form-payment">
+                    <summary>Formas de pagamento <i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up"></i></summary>
+                    <img src="./imgs/payment.png" alt="Formas de pagamento"/>
+                </details>
+                <hr>
+                <details class="product-return">
+                    <summary>Trocas e devoluções <i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up"></i></summary>
+                    <p>
+                        As trocas e devoluções podem ser feitas em até 7 (sete) dias corridos se o cliente se arrepender da compra.
+                        
+                        Depois desse prazo, elas são gratuitas durante 30 dias depois da data do pedido.
+                    </p>
+                </details>
+                <hr>
+            </div>
+            <div class="delivery">
+                <img src="./imgs/Ícone Frete.svg" alt="icone de caminhão de frete"/>
+                <div class="delivery-text">
+                    <p>Entrega rápida</p>
+                    <span>Enviamos para todo o Brasil</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="product-details">
+        <div class="title-details">
+            <input type="radio" name="product-details" id="product-details" checked>
+            <label for="product-details">Detalhes do produto</label>
+            <input type="radio" name="product-details" id="product-characteristics">
+            <label for="product-characteristics">Caracteristicas do Produto</label>
+            <p class="text-details">
+                O nosso modelo de vestido Intense com certeza é a tendência do momento! Com um corte justo no corpo, ele realça suas curvas de forma leve e sensual. Feito com uma combinação de tecidos de alta qualidade, incluindo lycra, poliéster e algodão, o vestido Intense proporciona um conforto excepcional. O design sem estampa adiciona um toque minimalista e versátil ao seu look, perfeito para ocasiões casuais. Seja para um encontro descontraído ou uma tarde entre amigos, este vestido é a escolha certa para um estilo sensual e sofisticado ao mesmo tempo.
+            </p>
+            <p class="text-characteristics">
+                Composição Tecido: 94% Poliester, 06% Elastano
+            </p>
+        </div>
+    </section>
+    <section class="more-products">
+        <div class="title__more-products">
+            <hr class="green-line">
+            <h3>Produtos que você também pode gostar</h3>
+            <hr class="pink-line">
+        </div>
+        <div class="products">
+            <i class="fa-solid fa-angle-left" onclick="scrollToLeft()"></i>
+            <div class="products-cards">
+                <div class="product">
+                    <div class="product-img">
+                        <input type="checkbox" name="like-product" id="BlazerOffWhite">
+                        <label for="BlazerOffWhite">
+                            <span class="tag-new">Novo</span>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </label>
+                        <img src="./imgs/Carrossel Imagem 2.png" alt="Blazer Off White"/>
+                    </div>
+                    <p class="product-title">
+                        Blazer Off White
+                    </p>
+                    <div class="product-price">
+                        <p class="old-price">R$ 158,00</p>
+                        <p class="new-price">R$ 140,70</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <input type="checkbox" name="like-product" id="BlackJacket">
+                        <label for="BlackJacket">
+                            <span class="price-discount">25% off</span>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </label>
+                        <img src="./imgs/Carrossel Imagem 2-1.png" alt="Black Jacket"/>
+                    </div>
+                    <p class="product-title">
+                        Black Jacket
+                    </p>
+                    <div class="product-price">
+                        <p class="old-price">R$ 158,00</p>
+                        <p class="new-price">R$ 118,50</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <input type="checkbox" name="like-product" id="CalçaWideLegDestroyed">
+                        <label for="CalçaWideLegDestroyed">
+                            <span class="tag-new">Novo</span>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </label>
+                        <img src="./imgs/Carrossel Imagem 2-2.png" alt="Calça Wide Leg Destroyed"/>
+                    </div>
+                    <p class="product-title">
+                        Calça Wide Leg Destroyed
+                    </p>
+                    <div class="product-price">
+                        <p class="old-price">R$ 158,00</p>
+                        <p class="new-price">R$ 136, 80</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <input type="checkbox" name="like-product" id="CamisaJeanscomBolsos">
+                        <label for="CamisaJeanscomBolsos">
+                            <span class="tag-new">Novo</span>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </label>
+                        <img src="./imgs/Carrossel Imagem 2-3.png" alt="Camisa Jeans com Bolsos"/>
+                    </div>
+                    <p class="product-title">
+                        Camisa Jeans com Bolsos
+                    </p>
+                    <div class="product-price">
+                        <p class="old-price">R$ 110,40</p>
+                        <p class="new-price">R$ 93,84</p>
+                    </div>
+                </div>
+            </div>
+            <i class="fa-solid fa-angle-right" onclick="scrollToRight()"></i>
+        </div>
+    </section>
+    <footer>Feito por <a href="https://www.linkedin.com/in/aryel-anne/">Aryel Anne</a></footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
