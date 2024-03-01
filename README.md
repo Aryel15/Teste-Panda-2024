@@ -9,5 +9,5 @@ O projeto consiste em uma página web responsiva desenvolvida utilizando HTML, C
 - Visualização de avaliações de clientes, e tabela de tamanhos em um modal.
 - Feedback visual quando um produto é adicionado ao carrinho.
 <br>
-Link do projeto: https://aryel15.github.io/Teste-Panda-2024/
+Link do projeto: https://aryel15.github.io/Teste-Panda-2024/<br>
 Feito por Aryel Anne
