@@ -9,4 +9,5 @@ O projeto consiste em uma página web responsiva desenvolvida utilizando HTML, C
 - Visualização de avaliações de clientes, e tabela de tamanhos em um modal.
 - Feedback visual quando um produto é adicionado ao carrinho.
 <br>
-![image](https://github.com/Aryel15/Teste-Panda-2024/assets/69636549/bf447972-cbac-4027-9a77-3c15bf6bb26e)
+![image](https://github.com/Aryel15/Teste-Panda-2024/assets/69636549/c7c46aeb-5b70-4556-8059-f08bc884e047)
+
